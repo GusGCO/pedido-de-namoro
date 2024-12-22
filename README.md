@@ -1,6 +1,3 @@
-Aqui está a versão em formato Markdown para seu arquivo README:
-
-```markdown
 # Aceitas? 💖
 
 Este é um código interativo desenvolvido em **HTML, CSS e JavaScript** que cria uma página divertida e romântica para fazer "aquela" pergunta especial: *"Quer namorar comigo?"*. 🌹✨
@@ -48,4 +45,3 @@ A página é estilizada com tons suaves e românticos:
 ---
 
 **Divirta-se e boa sorte com sua declaração!** 😊
-```
