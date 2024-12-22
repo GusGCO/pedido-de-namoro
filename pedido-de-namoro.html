@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aceitas?</title>
+    <style>
+        body {
+            background-color: #ffc8dd;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        h1 {
+            color: #590d22;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #ffb3c1;
+            border: 3px ridge #590d22;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #button1 {
+            font-size: 12px;
+            padding: 10px 20px;
+            position: absolute;
+        }
+        #button2 {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quer namorar comigo?</h1>
+    <button id="button1">Não</button>
+    <button id="button2">Sim</button>
+
+    <script>
+        const button1 = document.getElementById('button1');
+        const button2 = document.getElementById('button2');
+
+        // Função para mover o botão "Não"
+        button1.addEventListener('mouseover', () => {
+            const x = Math.random() * (window.innerWidth - button1.offsetWidth);
+            const y = Math.random() * (window.innerHeight - button1.offsetHeight);
+            button1.style.left = `${x}px`;
+            button1.style.top = `${y}px`;
+        });
+
+        // Função para abrir o link ao clicar em "Sim"
+        button2.addEventListener('click', () => {
+            window.open('https://www.youtube.com/watch?v=VWRkQARH-9o', '_blank');
+        });
+
+        // Remove o botão "Não" ao clicar nele
+        button1.addEventListener('click', () => {
+            button1.remove();
+        });
+    </script>
+</body>
+</html>
